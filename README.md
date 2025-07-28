@@ -1,4 +1,5 @@
-🧠 Ultimate Tic Tac Toe — Game Rules Explained
+🧠 Ultimate Tic Tac Toe — 
+Game Rules Explained
 Ultimate Tic Tac Toe (also called Super Tic Tac Toe or Meta Tic Tac Toe) is a strategic, multi-level version of the classic game. It uses a 3×3 grid of 3×3 mini Tic Tac Toe boards — so 9 mini boards, forming a big 3×3 grid.
 
 🎮 Objective:
