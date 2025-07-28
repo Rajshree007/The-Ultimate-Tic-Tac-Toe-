@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="index">
+  <main>
+    <div class="game_title"  style="padding-top: 10%">   
+      <h1>The Ultimate Tic Tac Toe</h1>
+  </div>
+    <form action="game.html" method="GET">
+    <div class="text-container">
+      <div class="text-box">
+        <div class="input-group">
+          <label for="playerX">X:</label>
+          <input type="text" id="playerX" name="playerX" placeholder="Enter a name for Player X" />
+        </div>
+        <div class="input-group">
+          <label for="playerO">O:</label>
+          <input type="text" id="playerO" name="playerO" placeholder="Enter a name for Player O" />
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+    </div>
+    </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

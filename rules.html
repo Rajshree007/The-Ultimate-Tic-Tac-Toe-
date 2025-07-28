@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultimate Tic Tac Toe - How to Play</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="rules">
+  <main class="rules-container">
+    <h1 class="title">The Ultimate Tic Tac Toe</h1>
+    <p class="intro">Welcome! This is not your usual Tic Tac Toe. It's smarter. It's trickier. It's more fun!</p>
+
+    <h3>Game Setup:</h3>
+    <ul class="rules-list">
+      <li>The game is played on a **3×3 grid** of **9 smaller Tic Tac Toe boards**.</li>
+      <li>Each smaller board is a regular 3×3 Tic Tac Toe game.</li>
+      <li>Your goal is to win **3 small boards in a row** — just like classic Tic Tac Toe, but on the big board!</li>
+    </ul>
+
+    <h3>How to Play:</h3>
+    <ul class="rules-list">
+      <li>Player X starts by picking **any square** in **any of the 9 boards**.</li>
+      <li>Let’s say Player X picks the **top-left square** of a mini board — this sends Player O to the **top-left mini board** next.</li>
+      <li>Then Player O plays in that specific board. Their move determines where Player X goes next.</li>
+    </ul>
+
+    <h3>Special Situations:</h3>
+    <ul class="rules-list">
+      <li>If you are sent to a mini board that is **already full or won**, you are free to play **anywhere**.</li>
+      <li>A mini board is won by getting **3 Xs or Os in a row** in that board — just like regular Tic Tac Toe.</li>
+      <li>Once you win a mini board, it becomes **your mark (X or O)** on the big board.</li>
+    </ul>
+
+    <h3>How to Win:</h3>
+    <ul class="rules-list">
+      <li>Win **3 mini boards in a row** — horizontally, vertically, or diagonally — on the big board.</li>
+      <li>This makes you the winner of the Ultimate Tic Tac Toe game!</li>
+    </ul>
+
+    <p class="note">🧠 Think ahead. Plan your moves. Don’t just win boards — control the flow!</p>
+
+    <button class="next-btn" onclick="location.href='index.html'">I'm Ready! ▶</button>
+  </main>
+</body>
+</html>

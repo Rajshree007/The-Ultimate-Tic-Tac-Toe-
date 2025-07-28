@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+body{
+    background-color: #1E3E62;
+    text-align: center;
+}
+
+
+.game_title{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color:#fff;
+    font-size: 1.5rem;
+}
+.container{
+    height:80vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:1.5vmin;
+}
+.box{
+    height:8vmin;
+    width:8vmin;
+    font-size: 4vmin;
+    background-color: #fff;
+}
+
+.box:disabled{
+    background-color: #F7F7F8;
+    color:#C5172E;
+    opacity: 0.8;        
+}
+.grid{
+    margin:1vmin;
+    height:24vmin;
+    width: 24vmin;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+p{
+    color:#fff;
+}   
+.game{
+    height:80vmin;
+    width:80vmin;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+
+    
+}
+.info{
+    
+    height:5vmin;
+    display:flex;
+    flex-wrap:wrap;
+    color:#000000;
+    justify-content:center;
+    align-items:center;
+    gap:1vmin;
+}
+
+.square{
+    height:5vmin;
+    width:5vmin;
+
+}
+.msg{
+
+    height:2vmin;
+    margin-bottom: 0%s;
+}
+.highlight {
+    background-color: purple;
+    color: white;
+    border: 2px solid yellow;
+}
+#msg{
+    color:#fff;
+    font-size: 5vmin;
+}
+.msg-container{
+    height:100vmin;
+    width:100%;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    gap:4rem;
+    padding-top: 20%;
+}
+.hide{
+    display:none;
+}
+.reset{
+    border-radius: 2rem;
+    height:7vmin;
+    width:20vmin;
+    font-size: 1.5rem;
+    font-family: "Georgia";
+    background-color: #fff;
+    border: none;
+    color:#B47B84;
+    font-weight: bold;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+/*index*/
+body.index {
+    background-color: #1E3E62;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+.text-container {
+    color:#1E3E62;
+    margin-top: 20%;
+    background-color: #ffffff;
+    justify-content:center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .input-group input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 200px;
+  }
+  
+  .submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+
+/*rule*/
+body.rules {
+    margin: 0;
+    padding: 0;
+    background-color: #1E3E62;
+    color: #1E3E62;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .rules-container {
+    background-color: #fff;
+    margin: 10%;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow-y: auto;
+    max-height: 95vh;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #1E3E62;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  
+  .intro {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #1E3E62;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: #1E3E62;
+  }
+  
+  .rules-list {
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .rules-list li {
+    margin-bottom: 10px;
+  }
+  
+  .note {
+    font-style: italic;
+    color: #1E3E62;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .next-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 28px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1E3E62;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .next-btn:hover {
+    background-color: #27496d;
+  }
+  

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main> 
+    <div class="game_title">   
+        <h1>The Ultimate Tic Tac Toe</h1>
+    </div>
+    <div class="msg-container hide">
+        <p id ="msg"></p>
+        <button class="reset">Play Again</button>
+    </div>
+    <div class="info">
+        <p>X:</p>
+        <div class ="square" style="background-color: #FED2E2;"></div>
+        <p>O:</p> 
+        <div class ="square" style="background-color: #C4D9FF;"></div>
+    </div>
+    <div class="container">
+        <div class="declare_winner hide">
+        </div>
+        
+        <div class="game"> 
+            <div class = "CellWin">
+                <div class="grid" data-x="0">
+                    <button class="box" data-a="0" data-b="0" data-c="0" data-d="0" data-x="0"></button>
+                    <button class="box" data-a="0" data-b="0" data-c="0" data-d="1" data-x="0"></button>
+                    <button class="box" data-a="0" data-b="0" data-c="0" data-d="2" data-x="0"></button>
+                    <button class="box" data-a="0" data-b="0" data-c="1" data-d="0" data-x="0"></button>
+                    <button class="box" data-a="0" data-b="0" data-c="1" data-d="1" data-x="0"></button>
+                    <button class="box" data-a="0" data-b="0" data-c="1" data-d="2" data-x="0"></button>
+                    <button class="box" data-a="0" data-b="0" data-c="2" data-d="0" data-x="0"></button>
+                    <button class="box" data-a="0" data-b="0" data-c="2" data-d="1" data-x="0"></button>
+                    <button class="box" data-a="0" data-b="0" data-c="2" data-d="2" data-x="0"></button>
+                </div>
+            </div>
+            <div class = "CellWin">
+                <div class="grid" data-x="1">
+                    <button class="box" data-a="0" data-b="1" data-c="0" data-d="0" data-x="1"></button>
+                    <button class="box" data-a="0" data-b="1" data-c="0" data-d="1" data-x="1"></button>
+                    <button class="box" data-a="0" data-b="1" data-c="0" data-d="2" data-x="1"></button>
+                    <button class="box" data-a="0" data-b="1" data-c="1" data-d="0" data-x="1"></button>
+                    <button class="box" data-a="0" data-b="1" data-c="1" data-d="1" data-x="1"></button>
+                    <button class="box" data-a="0" data-b="1" data-c="1" data-d="2" data-x="1"></button>
+                    <button class="box" data-a="0" data-b="1" data-c="2" data-d="0" data-x="1"></button>
+                    <button class="box" data-a="0" data-b="1" data-c="2" data-d="1" data-x="1"></button>
+                    <button class="box" data-a="0" data-b="1" data-c="2" data-d="2" data-x="1"></button>
+                </div>
+            </div>
+            <div class = "CellWin">
+                <div class="grid" data-x="2">
+                    <button class="box" data-a="0" data-b="2" data-c="0" data-d="0" data-x="2"></button>
+                    <button class="box" data-a="0" data-b="2" data-c="0" data-d="1" data-x="2"></button>
+                    <button class="box" data-a="0" data-b="2" data-c="0" data-d="2" data-x="2"></button>
+                    <button class="box" data-a="0" data-b="2" data-c="1" data-d="0" data-x="2"></button>
+                    <button class="box" data-a="0" data-b="2" data-c="1" data-d="1" data-x="2"></button>
+                    <button class="box" data-a="0" data-b="2" data-c="1" data-d="2" data-x="2"></button>
+                    <button class="box" data-a="0" data-b="2" data-c="2" data-d="0" data-x="2"></button>
+                    <button class="box" data-a="0" data-b="2" data-c="2" data-d="1" data-x="2"></button>
+                    <button class="box" data-a="0" data-b="2" data-c="2" data-d="2" data-x="2"></button>
+                </div>
+            </div>
+            <div class = "CellWin">
+                <div class="grid" data-x="3">
+                    <button class="box" data-a="1" data-b="0" data-c="0" data-d="0" data-x="3"></button>
+                    <button class="box" data-a="1" data-b="0" data-c="0" data-d="1" data-x="3"></button>
+                    <button class="box" data-a="1" data-b="0" data-c="0" data-d="2" data-x="3"></button>
+                    <button class="box" data-a="1" data-b="0" data-c="1" data-d="0" data-x="3"></button>
+                    <button class="box" data-a="1" data-b="0" data-c="1" data-d="1" data-x="3"></button>
+                    <button class="box" data-a="1" data-b="0" data-c="1" data-d="2" data-x="3"></button>
+                    <button class="box" data-a="1" data-b="0" data-c="2" data-d="0" data-x="3"></button>
+                    <button class="box" data-a="1" data-b="0" data-c="2" data-d="1" data-x="3"></button>
+                    <button class="box" data-a="1" data-b="0" data-c="2" data-d="2" data-x="3"></button> 
+                </div>
+            </div>
+            <div class = "CellWin">
+                <div class="grid" data-x="4">
+                    <button class="box" data-a="1" data-b="1" data-c="0" data-d="0" data-x="4"></button>
+                    <button class="box" data-a="1" data-b="1" data-c="0" data-d="1" data-x="4"></button>
+                    <button class="box" data-a="1" data-b="1" data-c="0" data-d="2" data-x="4"></button>
+                    <button class="box" data-a="1" data-b="1" data-c="1" data-d="0" data-x="4"></button>
+                    <button class="box" data-a="1" data-b="1" data-c="1" data-d="1" data-x="4"></button>
+                    <button class="box" data-a="1" data-b="1" data-c="1" data-d="2" data-x="4"></button>
+                    <button class="box" data-a="1" data-b="1" data-c="2" data-d="0" data-x="4"></button>
+                    <button class="box" data-a="1" data-b="1" data-c="2" data-d="1" data-x="4"></button>
+                    <button class="box" data-a="1" data-b="1" data-c="2" data-d="2" data-x="4"></button>
+                </div>
+            </div>
+            <div class = "CellWin">
+                <div class="grid" data-x="5">
+                    <button class="box" data-a="1" data-b="2" data-c="0" data-d="0" data-x="5"></button>
+                    <button class="box" data-a="1" data-b="2" data-c="0" data-d="1" data-x="5"></button>
+                    <button class="box" data-a="1" data-b="2" data-c="0" data-d="2" data-x="5"></button>
+                    <button class="box" data-a="1" data-b="2" data-c="1" data-d="0" data-x="5"></button>
+                    <button class="box" data-a="1" data-b="2" data-c="1" data-d="1" data-x="5"></button>
+                    <button class="box" data-a="1" data-b="2" data-c="1" data-d="2" data-x="5"></button>
+                    <button class="box" data-a="1" data-b="2" data-c="2" data-d="0" data-x="5"></button>
+                    <button class="box" data-a="1" data-b="2" data-c="2" data-d="1" data-x="5"></button>
+                    <button class="box" data-a="1" data-b="2" data-c="2" data-d="2" data-x="5"></button>
+                </div>
+            </div>
+            <div class = "CellWin">
+                <div class="grid" data-x="6">
+                    <button class="box" data-a="2" data-b="0" data-c="0" data-d="0" data-x="6"></button>
+                    <button class="box" data-a="2" data-b="0" data-c="0" data-d="1" data-x="6"></button>
+                    <button class="box" data-a="2" data-b="0" data-c="0" data-d="2" data-x="6"></button>
+                    <button class="box" data-a="2" data-b="0" data-c="1" data-d="0" data-x="6"></button>
+                    <button class="box" data-a="2" data-b="0" data-c="1" data-d="1" data-x="6"></button>
+                    <button class="box" data-a="2" data-b="0" data-c="1" data-d="2" data-x="6"></button>
+                    <button class="box" data-a="2" data-b="0" data-c="2" data-d="0" data-x="6"></button>
+                    <button class="box" data-a="2" data-b="0" data-c="2" data-d="1" data-x="6"></button>
+                    <button class="box" data-a="2" data-b="0" data-c="2" data-d="2" data-x="6"></button>
+                </div> 
+            </div>
+            <div class = "CellWin">
+                <div class="grid" data-x="7">
+                    <button class="box" data-a="2" data-b="1" data-c="0" data-d="0" data-x="7"></button>
+                    <button class="box" data-a="2" data-b="1" data-c="0" data-d="1" data-x="7"></button>
+                    <button class="box" data-a="2" data-b="1" data-c="0" data-d="2" data-x="7"></button>
+                    <button class="box" data-a="2" data-b="1" data-c="1" data-d="0" data-x="7"></button>
+                    <button class="box" data-a="2" data-b="1" data-c="1" data-d="1" data-x="7"></button>
+                    <button class="box" data-a="2" data-b="1" data-c="1" data-d="2" data-x="7"></button>
+                    <button class="box" data-a="2" data-b="1" data-c="2" data-d="0" data-x="7"></button>
+                    <button class="box" data-a="2" data-b="1" data-c="2" data-d="1" data-x="7"></button>
+                    <button class="box" data-a="2" data-b="1" data-c="2" data-d="2" data-x="7"></button>
+                </div>
+            </div>
+            <div class = "CellWin">
+                <div class="grid" data-x="8">
+                    <button class="box" data-a="2" data-b="2" data-c="0" data-d="0" data-x="8"></button>
+                    <button class="box" data-a="2" data-b="2" data-c="0" data-d="1" data-x="8"></button>
+                    <button class="box" data-a="2" data-b="2" data-c="0" data-d="2" data-x="8"></button>
+                    <button class="box" data-a="2" data-b="2" data-c="1" data-d="0" data-x="8"></button>
+                    <button class="box" data-a="2" data-b="2" data-c="1" data-d="1" data-x="8"></button>
+                    <button class="box" data-a="2" data-b="2" data-c="1" data-d="2" data-x="8"></button>
+                    <button class="box" data-a="2" data-b="2" data-c="2" data-d="0" data-x="8"></button>
+                    <button class="box" data-a="2" data-b="2" data-c="2" data-d="1" data-x="8"></button>
+                    <button class="box" data-a="2" data-b="2" data-c="2" data-d="2" data-x="8"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
