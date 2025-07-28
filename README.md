@@ -43,4 +43,4 @@ Try to force your opponent into mini boards that benefit you.
 
 Winning a mini board is important, but controlling the flow is even more critical.
 
-Would you like a visual diagram or a short animation-style explanation?
+
